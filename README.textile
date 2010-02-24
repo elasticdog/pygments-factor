@@ -7,7 +7,7 @@ h2. How to Use
 Replace the @compiled.py@ file contained in your Pygments installation's @/pygments/lexers/@ directory. After the file has been replaced, you'll have to run the @_mapping.py@ file from within the @lexers/@ directory:
 
 <pre><code># cd /path/to/pygments/lexers/
-# _mapping.py</code></pre>
+# python ./_mapping.py</code></pre>
 
 After that, Pygments will generate syntax highlighting for "factor" files.
 
