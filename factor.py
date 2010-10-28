@@ -169,6 +169,7 @@ class FactorLexer(RegexLexer):
             (r'\b(t|f)\b', Name.Constant),
 
             # numbers
+            (r'[+-]?\d+/\d+\b', Number),
             (r'[+-]?\d+\b', Number.Integer),
             (r'\b[+-]?\d*\.\d+([eE][-+]?\d+)?\b', Number.Float),
             (r'\bBIN:\s+[-+]?[01]+\b', Number),
