@@ -6,11 +6,9 @@ h2. How to Use
 
 Open up the the @agile.py@ file contained in your Pygments installation's @/pygments/lexers/@ directory and add a new section with this code. You'll also need to add "FactorLexer" to the @__all__@ array at the top of the file. After the file has been modified, you'll have to run the @_mapping.py@ file from within the @lexers/@ directory so Pygments becomes aware of the addition:
 
-{% highlight bash-session %}
-# cd /path/to/pygments/lexers/
+bc. # cd /path/to/pygments/lexers/
 # vim agile.py
 # python ./_mapping.py
-{% endhighlight %}
 
 After that, Pygments will generate syntax highlighting for "factor" files.
 
