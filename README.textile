@@ -4,9 +4,12 @@ This "Pygments":http://pygments.org/ lexer for "Factor":http://factorcode.org/ s
 
 h2. How to Use
 
-# Open up the the @agile.py@ file contained in your Pygments installation's @/pygments/lexers/@ directory and add a new section with this code.
-# You'll also need to add "FactorLexer" to the @__all__@ array at the top of the file.
-# After the file has been modified, you'll have to run the @_mapping.py@ file from within the @lexers/@ directory so Pygments becomes aware of the addition.
+If you're running Pygments v1.4 or later, this lexer is included by default. If you're using a previous version of Pygments or just want to use the most up-to-date Factor lexer from this page, you'll want to add or update whatever exists in your agile languages file:
+
+# Open up the the @agile.py@ file contained in your Pygments installation's @/pygments/lexers/@ directory and add/update the @FactorLexer@ class with this code.
+# Make sure that "FactorLexer" exists in the @__all__@ array at the top of the file.
+# Save @agile.py@.
+# To be safe, you'll want to run the @_mapping.py@ file from within the @lexers/@ directory so Pygments becomes aware of the additional lexer.
 
 bc. # cd /path/to/pygments/lexers/
 # vim agile.py
